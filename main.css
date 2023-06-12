@@ -1,0 +1,346 @@
+/* POLICE D'ÉCRITURE */ 
+
+@font-face {
+  font-family: LATO-Black;
+  src: url('front/Lato-Black.ttf');
+}
+@font-face {
+  font-family: LATO-Black-Italic;
+  src: url('front/Lato-BlackItalic.ttf');
+}
+
+@font-face {
+  font-family: LATO-Bold;
+  src: url('front/Lato-Bold.ttf');
+}
+@font-face {
+  font-family: LATO-Bold-Italic;
+  src: url('front/Lato-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: LATO-Italic;
+  src: url('front/Lato-Italic.ttf');
+}
+@font-face {
+  font-family: LATO-Light;
+  src: url('front/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: LATO-Light-Italic;
+  src: url('front/Lato-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: LATO-Regular;
+  src: url('front/Lato-Regular.ttf');
+}
+@font-face {
+  font-family: LATO-Thin;
+  src: url('front/Lato-Thin.ttf');
+}
+@font-face {
+  font-family: LATO-Thin-Italic;
+  src: url('front/Lato-ThinItalic.ttf');
+}
+
+
+
+
+
+
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    margin: 10rem;
+  }
+
+section {
+  border: 10px solid rgb(238, 98, 33);
+  padding: 20px;
+}
+  
+  h1 {
+    margin-top: 50px;
+  }
+  .h3-LB {
+    font-family: LATO-Black;
+  }
+  .h3-LL {
+    font-family: LATO-Light;
+  }
+
+  
+
+  
+ 
+  
+  
+
+
+
+
+/* DICE */
+
+#resultat-de {
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+#dice {
+  border: 3px solid gray;
+  width: 70px;
+  height: 70px;@media screen and (max-width: 600px) {
+    /* Styles à appliquer pour les écrans de téléphone */
+  }
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dice {
+    font-size: 2.4rem;  
+}
+.result-dice {
+    color: black;
+}
+
+.rotate {
+  animation: rotate 2s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* GAME */
+
+.reset-game {
+  cursor: pointer;
+}
+
+.game {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.game2 {
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin-top: 120px;
+}
+
+
+
+
+
+/* IMAGE */
+
+.img-newGame {
+ width: 25px;
+}
+
+.img-rafraichir {
+  width: 25px;
+  margin-right: 5px;
+}
+.img-hold {
+  width: 30px;
+  margin-right: 5px;
+}
+
+/* BUTTON */
+
+.btn-dice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+}
+
+.btn-hold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: white;
+}
+
+#btnPlayOrSave {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+
+
+/* CURRENT PLAYER */
+
+.player1-current {
+  background-color: rgb(226, 54, 54);
+  border: 1px solid rgb(226, 54, 54);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.player1-current h5 {
+  padding: 0 15px;
+  margin-bottom: 2px;
+  color: black;
+}
+
+.player2-current {
+  background-color: rgb(54, 27, 150);
+  border: 1px solid rgb(54, 27, 150);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.player2-current h5 {
+  padding: 0 15px;
+  margin-bottom: 2px;
+  color: black;
+}
+
+.player2 {
+  display: none;
+}
+
+#score-joueur1, #score-joueur2 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* ALERT INFO */
+
+#alert {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  padding: 15px;
+}
+
+
+
+
+/* MEDIA QUERRIES */
+
+@media screen and (max-width: 600px) {
+  
+
+/* style.css */
+
+/* CSS commun pour tous les écrans */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+section {
+  border: 10px solid rgb(238, 98, 33);
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+.rotate {
+  animation: rotate 2s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CSS pour les écrans de téléphone */
+@media screen and (max-width: 600px) {
+
+  /* Réinitialiser la marge pour h1 */
+  h1 {
+    margin-top: 0;
+  }
+
+  /* Redimensionner les images */
+  .img-newGame, .img-rafraichir, .img-hold {
+    width: 20px;
+  }
+
+  /* Réduire la taille du bouton */
+  button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+
+  /* Afficher le joueur 2 */
+  .player2 {
+    display: none;
+  }
+  
+
+  /* Redimensionner la taille du dé */
+  #dice {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* Réduire la taille du texte pour le résultat du dé */
+  .dice {
+    font-size: 2rem;
+  }
+
+  /* Redimensionner la taille de l'alerte */
+  #alert {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .game {
+    display: inline-flex;
+  }
+
+  .container-player {
+    
+  }
+
+  #container-player {
+    
+  }
+
+}
+
+
+}
+
